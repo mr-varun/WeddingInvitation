@@ -13,10 +13,16 @@
   });
 })(jQuery);
 
+
 $(document).on("click", function () {
   document.getElementById("my_audio").play();
   console.log("Shaadi me zaroor aana");
 });
+
+window.addEventListener('load', () => {
+  document.getElementById("my_audio").play();
+});
+
 
 function pauseAudio() {
   document.getElementById("my_audio").pause();
